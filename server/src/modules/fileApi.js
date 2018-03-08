@@ -2,12 +2,12 @@ const uuid = require('uuid/v1')
 const aws = require('aws-sdk')
 
 const s3 = new aws.S3({
-  accessKeyId: process.env.S3_ACCESS_KEY_ID,
-  secretAccessKey: process.env.S3_SECRET_ACCESS_KEY,
+  accessKeyId: 'foo',
+  secretAccessKey: 'bar',
   params: {
-    Bucket: process.env.S3_BUCKET
+    Bucket: 'com.prisma.s3'
   },
-  endpoint: new aws.Endpoint('http://localhost:4569')
+  endpoint: new aws.Endpoint('http://localhost:4569') // fake s3 endpoint for local dev
 })
 
 exports.processUpload = async ( upload, ctx ) => {

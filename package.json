@@ -1,0 +1,33 @@
+{
+  "name": "prisma-s3",
+  "version": "1.0.0",
+  "private": true,
+  "devDependencies": {
+    "prettier-eslint-cli": "4.7.1",
+    "react-scripts": "1.1.1"
+  },
+  "dependencies": {
+    "apollo-cache-inmemory": "1.1.10",
+    "apollo-client": "2.2.6",
+    "apollo-client-preset": "^1.0.8",
+    "apollo-link": "1.2.1",
+    "apollo-link-http": "1.5.3",
+    "apollo-upload-client": "^8.0.0",
+    "graphql": "0.13.1",
+    "graphql-tag": "2.8.0",
+    "react": "16.2.0",
+    "react-apollo": "2.0.4",
+    "react-dom": "16.2.0",
+    "react-modal": "3.3.1",
+    "react-router-dom": "4.2.2",
+    "tachyons": "4.9.1"
+  },
+  "scripts": {
+    "start": "react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test --env=jsdom",
+    "eject": "react-scripts eject",
+    "prettier": "prettier-eslint --write \"src/**/*.+(js|jsx)\"",
+    "prettier-dry-run": "prettier-eslint \"src/**/*.+(js|jsx)\" -l debug"
+  }
+}

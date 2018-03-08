@@ -22,7 +22,6 @@ yarn start
 Deploy client
 
 ```
-cd client
 yarn install
 yarn start
 ```

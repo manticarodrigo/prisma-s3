@@ -2,13 +2,13 @@
 service: prisma-s3
 
 # the cluster and stage the service is deployed to
-stage: ${env:PRISMA_STAGE}
+stage: dev
 
 # to disable authentication:
-disableAuth: true
-secret: ${env:PRISMA_SECRET}
+# disableAuth: true
+secret: mysecret123
 
 # the file path pointing to your data model
 datamodel: datamodel.graphql
 
-cluster: ${env:PRISMA_CLUSTER}
+cluster: local
